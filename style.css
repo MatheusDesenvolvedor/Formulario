@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url('imagens/toa-heftiba-FV3GConVSss-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.div{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn{
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    color: white;
+    font-size: 25px;
+    line-height: 150px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: tahoma;
+    justify-content: center;
+    text-align: center;
+    background-color: #1d1e20;
+    display: flex;
+    animation: anima 1s linear infinite;  
+    border-radius: 10px;
+}
+.btn:hover{
+   color: gold;
+}
+.bg{
+    display: none;
+    position: absolute;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.form{
+    background-color: white;
+    width: 60%;
+    max-width: 600px;
+    padding: 2% 2%;
+    min-height: 400px;
+    height: auto;
+    border-radius: 20px;
+    width: 94%;
+}
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+form img{
+    width: 7vh;
+    height: 10vh;
+    background-color: none;
+    border: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+form h1{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1d1e20;
+    font-size: 25px;
+    justify-content: center;
+    align-items: flex-start;
+}
+input[type=text]{
+    color: #1d1e20;
+    border-radius: 10px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+input[type=tel]{
+    color: #1d1e20;
+    border-radius: 10px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+input[type=text]:focus{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #1d1e20;
+}
+input[type=tel]:focus{
+    outline: none;
+    border: 1px solid #1d1e20;
+}
+input[type=submit]{
+   font-size: 24px;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #1d1e20;
+   color: white;
+   margin-top: 20px;
+   text-align: center;
+   border: none;
+   cursor: pointer;
+}
+.button{
+    width: 60vw;
+     justify-content: center;
+    max-width: 600px;
+}
+button{
+    text-transform: uppercase;
+    font-size: 23px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 20%;
+    background-color: #1d1e20;
+    color: white;
+    margin-top: 20px;
+    margin-left: calc(100% - 60px);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+p{
+    z-index: 9;
+    color: red;
+    font-size: 16px;
+}
+@keyframes anima {
+    0%{
+      font-size: 22px;
+    }
+    100%{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .button{
+        width: 100vw;
+         justify-content: center;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 632px) {
+    .button{
+        width:95%;
+         justify-content: center;
+        max-width: 600px;
+    }
+}
